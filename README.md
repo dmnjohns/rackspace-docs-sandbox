@@ -5,6 +5,9 @@ manager. For more information, see
 [packaging.python.org/tutorials/managing-dependencies](https://packaging.python.org/tutorials/managing-dependencies/
 "https://packaging.python.org/tutorials/managing-dependencies/").
 
+To install `pipenv`, run `pip install --user pipenv`.
+To add `pipenv` to your `PATH`, run `export PATH="$(echo $(python -m site --user-base)/bin):$PATH"`.
+
 To install the dependencies, type `pipenv sync`. Then, enter the
 virtual environment by typing `pipenv shell`.
 
