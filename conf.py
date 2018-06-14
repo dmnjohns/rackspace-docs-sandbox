@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-<OFFICIAL PROJECT NAME> documentation build configuration file.
+Repose documentation build configuration file.
 
 This file is execfile()d with the current directory set to its
 containing dir.
@@ -84,8 +84,8 @@ master_doc = 'index'
 # builder = 'deconst-serial'
 
 # General information about the project.
-project = '<OFFICIAL PROEJCT NAME>'
-copyright = '<YEAR>, Rackspace'
+project = 'Repose'
+copyright = '2018, Rackspace'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
