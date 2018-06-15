@@ -1,12 +1,10 @@
 #############
-Test Page
+Topic1
 #############
-
-Version current
 
 .. toctree::
    :hidden:
    :maxdepth: 3
 
 
-   topic1/index
+   subject1
