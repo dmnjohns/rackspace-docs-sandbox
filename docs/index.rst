@@ -2,4 +2,4 @@
 Test Page
 #############
 
-Lorem ipsum.
+Version 1.
