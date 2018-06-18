@@ -14,3 +14,4 @@ Test paragraph with some test content.
 
 
    topic1/index
+   topic2/index
