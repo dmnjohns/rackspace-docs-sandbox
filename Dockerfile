@@ -1,6 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update -qq && apt-get install -qq \
+  git \
   python \
   python-pip \
   python-enchant
@@ -8,7 +9,8 @@ RUN apt-get update -qq && apt-get install -qq \
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
-WORKDIR docs
-VOLUME docs
+WORKDIR workspace
+VOLUME workspace
+VOLUME /root/.ssh
 
-CMD sphinx-versioning -l conf.py build docs _build/html/
+CMD sphinx-versioning -l docs/conf.py build docs docs/_build/html/
