@@ -17,8 +17,14 @@ RUN apt-get update -qq && apt-get install -qq \
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
-WORKDIR workspace
-VOLUME workspace
+# Create a .gitconfig file so that a single file can be mounted
+RUN touch /root/.gitconfig
+
+# Declare a volume to mount ssh configuration
 VOLUME /root/.ssh
 
-CMD sphinx-versioning -l docs/conf.py build docs docs/_build/html/
+WORKDIR workspace
+VOLUME workspace
+
+# todo: add publishing sphinx-versioning push -P origin-ssh docs gh-pages .
+CMD sphinx-versioning build docs docs/_build/html/
