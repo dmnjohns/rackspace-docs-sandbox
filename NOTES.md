@@ -46,6 +46,11 @@ We could also keep our docs in the same place they currently reside, and could
 even keep RST side-by-side with Asciidoctor files until we have fully migrated.
 To publish, we would have the Docker container run `sphinx-versioning push`
 to push generated html output to the gh-pages branch.
+Alternatively, we could continue to use our publishing task, and even simplify
+it a bit.
+Taking that approach would keep the work done by Docker pretty simple, append
+allow us to separate building and publishing (which would allow us to place
+  each where it is most appropriate in our Gradle flow).
 Note that SSH keys should be available to be able to push to origin.
 These, too, can be mounted to Docker.
 
@@ -84,7 +89,8 @@ Sphinx provides functional support for page searching.
 
 Sphinx will rebuild docs from all docs branches on each run.
 
-Sphinx Versioning Build Command:
-```
-sphinx-versioning -l docs/conf.py build docs/ docs/_build/html
-```
+If we tie the Docker management into Gradle, we can continue using our current
+link checker.
+
+Spell checking is handled by the `sphinxcontrib.spelling` Sphinx extension.
+This is already configured in the Sphinx configuration provided by Rackspace.
