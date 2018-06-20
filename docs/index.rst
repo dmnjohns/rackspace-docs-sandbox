@@ -8,6 +8,8 @@ Test Section
 
 Test paragraph with some test content.
 
+Misplled wrds!
+
 .. toctree::
    :hidden:
    :maxdepth: 3
