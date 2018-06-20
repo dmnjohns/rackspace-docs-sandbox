@@ -26,5 +26,6 @@ VOLUME /root/.ssh
 WORKDIR workspace
 VOLUME workspace
 
+# todo: copy the Makefile into the image, then use that to run Sphinx? `make spelling` works to run spell checking.
 # todo: add publishing sphinx-versioning push -P origin-ssh docs gh-pages .
 CMD sphinx-versioning build docs docs/_build/html/
