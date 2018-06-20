@@ -89,6 +89,8 @@ Sphinx provides functional support for page searching.
 
 Sphinx will rebuild docs from all docs branches on each run.
 
+Whitespace DOES appear to matter in RST documents.
+
 If we tie the Docker management into Gradle, we can continue using our current
 link checker.
 
