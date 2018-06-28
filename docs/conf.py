@@ -231,5 +231,6 @@ scv_show_banner = False
 #scv_banner_recent_tag = True
 svc_banner_main_ref = 'master'
 scv_sort = ('semver', 'time')
+scv_recent_tag = True
 scv_root_ref = 'master'
 svc_priority = 'branches'
