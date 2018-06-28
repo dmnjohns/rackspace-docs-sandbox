@@ -227,7 +227,7 @@ html_show_copyright = True
 # SCVersioning.
 #scv_banner_greatest_tag = True
 scv_grm_exclude = ('.gitignore', '.nojekyll', 'README.rst')
-scv_show_banner = True
+scv_show_banner = False
 #scv_banner_recent_tag = True
 svc_banner_main_ref = 'master'
 scv_sort = ('semver', 'time')
