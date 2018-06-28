@@ -234,4 +234,3 @@ scv_sort = ('semver', 'time')
 scv_recent_tag = True
 scv_root_ref = 'master'
 svc_priority = 'branches'
-scv_whitelist_branches = ('not-a-branch', 'also-not-a-branch')
